@@ -1,0 +1,275 @@
+:root {
+  --cor1: #B4BEC9;
+  --cor2: #159A9C;
+  --cor3: #002333;
+  --cor4: #DEEFE7;
+  --cor5: #FFFFFF;
+  --cor6: #33cbce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* GERAIS */
+.logo img {
+  max-width: 150px; /* Ajuste este valor conforme necessário */
+  height: auto;
+}
+
+.imagem {
+  max-width: 500px; /* Ajuste este valor conforme necessário */
+  height: auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.flex {
+  display: flex;
+}
+
+.interface .titulo {
+  color: #002333;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.interface .titulo span {
+  color: var(--cor2);
+}
+
+button:hover {
+  box-shadow: 0px 0px 8px #2ff0f380;
+  transform: scale(1.05);
+}
+
+/* FIM DOS GERAIS */
+/*ESTILO DO CABEÇALHO*/
+.interface {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Adiciona padding para melhorar o espaçamento em telas menores */
+}
+
+header {
+  background: var(--cor3);
+  box-shadow: 0px 1px 20px 5px rgba(0, 0, 0, 0.342);
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: rgb(129, 129, 129);
+  text-decoration: none;
+  display: inline-block;
+}
+
+header a:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* FIM ESTILO DO CABEÇALHO */
+
+/* ESTILO DO SITE */
+section.topodosite {
+  padding: 4px 4%;
+}
+
+section.topodosite .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topodosite h1 {
+  color: var(--cor3);
+  font-size: 38px;
+  line-height: 43px;
+  margin-top: 55px;
+}
+
+.topodosite h1 span {
+  color: var(--cor6);
+}
+
+.topodosite .txttopodosite p {
+  margin: 40px 0;
+  color: black;
+  margin-top: 15px;
+  text-align: justify;
+  width: 500px;
+}
+
+#contxt button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: var(--cor2);
+  color: rgba(255, 255, 255, 0.925);
+}
+
+#contxt button:hover {
+  box-shadow: 0px 0px 8px #2ff0f380;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.topodosite .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  transition: .2s;
+  border-radius: 50%;
+}
+
+@keyframes flutuar {
+  0% {
+      top: 0px;
+  }
+  100% {
+      top: 30px;
+  }
+}
+
+/* FIM DO ESTILO DO SITE */
+/* ESTILO DE ESPECIALIDADES */
+section.especialidades {
+  padding: 80px 4%;
+}
+
+section.especialidades .flex {
+  gap: 60px;
+}
+
+.especialidades .especialidadebox {
+  color: black;
+  padding: 40px;
+  border: 2px solid black;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.especialidades .especialidadebox:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px rgba(128, 128, 128, 0.801);
+}
+
+.especialidades .especialidadebox i {
+  font-size: 58px;
+  color: var(--cor3);
+}
+
+.especialidades .especialidadebox h3 {
+  font-size: 28px;
+  margin: 15px 0px;
+}
+/* FIM DE ESPECIALIDADES*/
+/* INICIO DO SOBRE */
+
+section.sobre {
+  padding: 40px 4%;
+}
+section.sobre .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.sobre .txt-sobre{
+  color: black;
+}
+.sobre .txt-sobre h2{
+  color: var(--cor3);
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+  color: var(--cor2);
+  display: block;
+}
+
+.sobre .txt-sobre p{
+  margin: 20px 0;
+  text-align: justify;
+}
+.img-sobre{
+  min-width: 250px;
+  max-width: 400px;
+  height: auto;
+}
+
+.imagem-arredondada {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.sobre .txt-sobre .btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--cor3);
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+  color: white;
+  transition: 0.2s;
+}

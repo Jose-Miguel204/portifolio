@@ -1,0 +1,125 @@
+:root {
+    --cor1: #B4BEC9;
+    --cor2: #159A9C;
+    --cor3: #002333;
+    --cor4: #DEEFE7;
+    --cor5: #FFFFFF;
+    --cor6: #33cbce;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* GERAIS */
+  .logo img {
+    max-width: 150px; /* Ajuste este valor conforme necessário */
+    height: auto;
+  }
+  
+  .imagem {
+    max-width: 500px; /* Ajuste este valor conforme necessário */
+    height: auto;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .interface .titulo {
+    color: #002333;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+  }
+  
+  .interface .titulo span {
+    color: var(--cor2);
+  }
+  
+  /* FIM DOS GERAIS */
+  /*ESTILO DO CABEÇALHO*/
+  .interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adiciona padding para melhorar o espaçamento em telas menores */
+  }
+  
+  header {
+    background: var(--cor3);
+    box-shadow: 0px 1px 20px 5px rgba(0, 0, 0, 0.342);
+  }
+  
+  header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a {
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  header a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+  }
+  
+  header .contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  header .contato button:hover {
+    box-shadow: 0px 0px 8px #2ff0f380;
+  }
+  
+  /* FIM ESTILO DO CABEÇALHO */
+  
